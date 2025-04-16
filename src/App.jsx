@@ -6,6 +6,7 @@ import Signup from './pages/Signup';
 import PrivateRoute from './components/PrivateRoute';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase/config';
+import LandingPage from './pages/LandingPage';  // Import LandingPage
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,14 +26,20 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Landing Page Route */}
+        <Route path="/" element={<LandingPage />} />
+
+        {/* Protected Routes */}
         <Route
-          path="/"
+          path="/home"
           element={
             <PrivateRoute>
               <Home />
             </PrivateRoute>
           }
         />
+
+        {/* Authentication Routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

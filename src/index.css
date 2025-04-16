@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Primary colors */
+/* :root {
+    --primary-color: #005F73;  
+    --secondary-color: #0A9396; 
+    --accent-color: #94D2BD;   
+    --background-color: #F1FAEE;
+    --text-color: #2A9D8F;     
+  } */
+
+  .logo-landing {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+
+  .icon{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 5px;
+  }
+
+  Contain

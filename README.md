@@ -15,3 +15,9 @@ This is a Product Management System created using React + Firebase
 3. **Product Filtering & Search**: 
 - Filter products by category, price range, or rating 
 - Search products by name or description 
+
+
+
+make it responsive impressive and use mui 
+
+
